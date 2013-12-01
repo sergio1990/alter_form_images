@@ -1,6 +1,6 @@
 # AlterFormImages
 
-TODO: Write a gem description
+More perfect decision for loading image in form with preview. This gem using several simple things that are bundled in small flexible plugin for Rails.
 
 ## Installation
 
@@ -18,7 +18,33 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+For start using provided tweaks add require js in your application.js:
+
+```javascript
+  //= require alter_form_images
+```
+
+Then add require css in your application.css:
+
+```stylesheet
+  *= require alter_form_images
+```
+
+And now we need to do the last step with example situation: you has _User_ model with _avatar_ attachment and for setting it in form add follow lines of code:
+
+```ruby
+  f.image_fields_for :avatar
+```
+
+You of course may do some configuration in this point:
+
+```ruby
+  f.image_fields_for :avatar, {
+    width: 100,                   # Width of preview image
+    height: 100,                  # Height of preview image
+    default: 'default_image.png'  # Url to default image
+  }
+```
 
 ## Contributing
 
