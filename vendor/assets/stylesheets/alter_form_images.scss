@@ -1,0 +1,14 @@
+.alter-image-block{
+  .alter-image-preview{
+
+  }
+  .alter-image-input{
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    width: 176px;
+    cursor: pointer;
+    height: 218px;
+    z-index: 100;
+  }
+}
