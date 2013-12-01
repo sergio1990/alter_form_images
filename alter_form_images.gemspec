@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = AlterFormImages::VERSION
   spec.authors       = ["sergio1990"]
   spec.email         = ["sergeg1990@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{More perfect decision for loading image in form with preview}
+  spec.summary       = spec.description
+  spec.homepage      = "https://github.com/sergio1990/alter_form_images"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split("/n")
