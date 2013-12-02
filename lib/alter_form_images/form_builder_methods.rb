@@ -24,7 +24,7 @@ module AlterFormImages
           height: 100,
           default_image: 'alter_default_image.png'
       }
-      options.merge(opts)
+      opts.merge(options)
     end
 
   end
