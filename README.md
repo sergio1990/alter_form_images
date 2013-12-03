@@ -40,9 +40,10 @@ You of course may do some configuration in this point:
 
 ```ruby
   f.image_fields_for :avatar, {
-    width: 100,                   # Width of preview image
-    height: 100,                  # Height of preview image
-    default: 'default_image.png'  # Url to default image
+    width: 100,                          # Width of preview image
+    height: 100,                         # Height of preview image
+    default_image: 'default_image.png',  # Url to default image
+    preview_style: :original             # Style of image for preview in edit form
   }
 ```
 
